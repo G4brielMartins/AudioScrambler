@@ -90,7 +90,7 @@ class Scrambler:
         for signal in signals:
             if signal not in self.signals:
                 raise ValueError("Signal must be 'original', 'scrambled', 'descrambled', or 'all'.")
-            export_audio(output_dir / f"{signal}.wav", self.rate, self.signals[signal]) 
+            export_audio(output_dir / f"{signal}.mp3", self.rate, self.signals[signal])
     
     def plot_signals(self, signals: list[str] = ['all'], sample_rate: int = 44_100) -> None:
         if 'all' in signals:
