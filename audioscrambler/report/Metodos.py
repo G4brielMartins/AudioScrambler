@@ -12,7 +12,9 @@ def Metodos(pdf: FPDF):
 ferramenta Audio Scrambler, que é distribuída junto a este relatório.
     Para utilizar a ferramenta, basta adicionar os arquivos de áudio de interesse no \
 diretório "./samples" e executar o script "run.py". Após a execução, imagens e áudios dos \
-sinais serão gerados na pasta "./output", organizados por arquivo de áudio de referência.
+sinais serão gerados na pasta "./output", organizados por arquivo de áudio de referência. \
+Os links para arquivos locais presentes neste PDF podem deixar de funcionar caso o PDF seja \
+aberto em um __browser__ e, neste caso, os áudios gerados devem ser acessados diretamente em "./output".
     Os arquivos gerados serão espectograma, representação no tempo e áudios em formato ".wav". \
 Cada arquivo terá informações referentes ao sinal original após __upsampling__ (m(t)), sinal \
 embaralhado (y(t)) e sinal desembaralhado (m_rec(t)). Ainda, este relatório será atualizado \
