@@ -35,7 +35,7 @@ for i, audio in enumerate(Path("samples").glob("*")):
         continue
     print(f"Processando {i+1}/{n_files}: {audio.stem}...")
 
-    out_path.mkdir(exist_ok=True)
+    out_path.mkdir(exist_ok=True, parents=True)
 
     # Inicializa o objeto Scrambler e processa o áudio
     scrambler = Scrambler(audio, AMOSTRAGEM_PROCESSAMENTO, out_path)
